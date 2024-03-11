@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "timemeasure",
+  "main": "times.cjs",
+  "scripts": {
+    "start": "node times.cjs"
+  },
+  "author": "kseniya",
+  "license": "ISC"
+}

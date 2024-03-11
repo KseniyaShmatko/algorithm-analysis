@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лабораторная 2</title>
+        <meta name="description" content="Умножение матриц" />
+        <meta name="author" content="Ксения Шматко" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css2?family=Roboto+Mono" type="text/css" />
+        <link rel="shortcut icon" href="algorithm.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class ="inputs">
+            <h1>Режим тестирования <br/>всех алгоритмов</h1>
+                <a href="#form1" class="inputMatr">Ввести первую матрицу</a>
+                <a href="#form2" class="inputMatr">Ввести вторую матрицу</a>
+            <button id="start">Посчитать</button>
+        </div>
+        <div class="form" id="form1">
+            <div class="wrapper">
+                <h2>Введите размер и заполните первую матрицу</h2>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="inputGroup">
+                        <input type="text" id="firstLine" required="required">
+                        <label for="firstLine">Введите n</label>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="text" id="secondLine" required="required">
+                        <label for="secondLine">Введите m</label>
+                    </div>
+                    <button class="generate">Построить матрицу</button>
+                    <div class="table"></div>
+                </div>
+                <button class="submit">Подтвердить</button>
+                <button class="clean">Очистить</button>
+            </div>
+        </div>
+        <div class="form" id="form2">
+            <div class="wrapper">
+                <h2>Введите размер и заполните вторую матрицу</h2>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="inputGroup">
+                        <input type="text" id="firstLine" required="required">
+                        <label for="firstLine">Введите n</label>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="text" id="secondLine" required="required">
+                        <label for="secondLine">Введите m</label>
+                    </div>
+                    <button class="generate">Построить матрицу</button>
+                    <div class="table"></div>
+                </div>
+                <button class="submit">Подтвердить</button>
+                <button class="clean">Очистить</button>
+            </div>
+        </div>
+        <main>
+            <section id="sec1">
+                <h1>Классическое умножение матриц</h1>
+                <div class="answer"></div>
+            </section>
+            <section id="sec2">
+                <h1>Алгоритм Винограда</h1>
+                <div class="answer"></div>
+            </section>
+            <section id="sec3">
+                <h1>Оптимизированный алгоритм Винограда</h1>
+                <div class="answer"></div>
+            </section>
+        </main>
+        <footer>
+            <h1>Режим построения графиков</h1>
+            <button id="timeTest">Построить</button>
+        </footer>
+        <div id="stats"></div>
+        <canvas id="measureTime1" width="1040px" height="400px"></canvas>
+        <canvas id="measureTime2" width="1040px" height="400px"></canvas>
+        <script src="http://mrdoob.github.io/stats.js/build/stats.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type='module' src="main.js"></script>
+        <script type='module' src="algorithms.js"></script>
+    </body>
+</html>
