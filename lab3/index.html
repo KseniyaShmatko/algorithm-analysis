@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лабораторная 3</title>
+        <meta name="description" content="Алгоритмы сортировок" />
+        <meta name="author" content="Ксения Шматко" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css2?family=Roboto+Mono" type="text/css" />
+        <link rel="shortcut icon" href="algorithm.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class ="inputs">
+            <h1>Режим тестирования <br/>всех алгоритмов</h1>
+                <a href="#form1" class="inputMatr">Ввести массив</a>
+            <button id="start">Посчитать</button>
+        </div>
+        <div class="form" id="form1">
+            <div class="wrapper">
+                <h2>Введите размер и заполните массив</h2>
+                <a href="#" class="close">&times;</a>
+                <div class="content">
+                    <div class="inputGroup">
+                        <input type="text" id="firstLine" required="required">
+                        <label for="firstLine">Введите n</label>
+                    </div>
+                    <button class="generate">Построить массив</button>
+                    <div class="table"></div>
+                </div>
+                <button class="submit">Подтвердить</button>
+                <button class="clean">Очистить</button>
+            </div>
+        </div>
+        <main>
+            <section id="sec1">
+                <h1>Быстрая сортировка</h1>
+                <div class="answer"></div>
+            </section>
+            <section id="sec2">
+                <h1>Сортировка расчёсткой</h1>
+                <div class="answer"></div>
+            </section>
+            <section id="sec3">
+                <h1>Сортировка бинарным деревом</h1>
+                <div class="answer"></div>
+            </section>
+        </main>
+        <footer>
+            <h1>Режим построения графиков</h1>
+            <button id="timeTest">Построить</button>
+        </footer>
+        <div id="stats"></div>
+        <canvas id="measureTime1" width="1040px" height="400px"></canvas>
+        <canvas id="measureTime2" width="1040px" height="400px"></canvas>
+        <canvas id="measureTime3" width="1040px" height="400px"></canvas>
+        <script src="http://mrdoob.github.io/stats.js/build/stats.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type='module' src="main.js"></script>
+        <script type='module' src="algorithms.js"></script>
+    </body>
+</html>
