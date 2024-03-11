@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лабораторная 1</title>
+        <meta name="description" content="Редакционное расстояние между строк" />
+        <meta name="author" content="Ксения Шматко" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css2?family=Roboto+Mono" type="text/css" />
+        <link rel="shortcut icon" href="algorithm.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class ="inputs">
+            <h1>Режим тестирования <br/>всех алгоритмов</h1>
+            <div class="inputGroup">
+                <input type="text" id="firstLine" required="required">
+                <label for="firstLine">Первая строка</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" id="secondLine" required="required">
+                <label for="secondLine">Вторая строка</label>
+            </div>
+            <button id="start">Посчитать</button>
+        </div>
+        <main>
+            <section id="sec1">
+                <h1>Нерекурсивный алгоритм нахождения расстояния Левенштейна</h1>
+                <div class="wrap">
+                    <span id="sp1"></span>
+                    <div class="answer">
+                    </div>
+                </div>
+            </section>
+            <section id="sec2">
+                <h1>Нерекурсивный алгоритм нахождения расстояния Дамерау-Левенштейна</h1>
+                <div class="wrap">
+                    <span id="sp2"></span>
+                    <div class="answer">
+                    </div>
+                </div>
+            </section>
+            <section id="sec3">
+                <h1>Рекурсивный алгоритм нахождения расстояния Дамерау-Левенштейна</h1>
+                <div class="wrap" id="wrap3">
+                    <span id="sp3"></span>
+                </div>
+            </section>
+            <section id="sec4">
+                <h1>Рекурсивный алгоритм нахождения расстояния Дамерау-Левенштейна с кешированием</h1>
+                <div class="wrap">
+                    <span id="sp4"></span>
+                    <div class="answer">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h1>Режим построения графиков</h1>
+            <button id="timeTest">Построить</button>
+        </footer>
+        <div id="stats"></div>
+        <canvas id="measureTime1" width="1040px" height="400px"></canvas>
+        <canvas id="measureTime2" width="1040px" height="400px"></canvas>
+        <script src="http://mrdoob.github.io/stats.js/build/stats.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type='module' src="main.js"></script>
+        <script type='module' src="algoritms.js"></script>
+    </body>
+</html>
